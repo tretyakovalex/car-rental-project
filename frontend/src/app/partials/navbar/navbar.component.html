@@ -1,0 +1,26 @@
+<div class="navbar" *ngIf="screenWidth < 900">
+    <div class="top-navbar">
+        <div class="logo">
+            <h2>Car Rental</h2>
+        </div>
+        <a>
+            <span class="material-symbols-outlined" (click)="toggleMenu()">menu</span>
+        </a>    
+    </div>
+    <div class="links" *ngIf="isMenuOpen">
+        <a routerLink="/">Home</a>
+        <a routerLink="/car-listings">Car-Listings</a>
+        <a routerLink="/book-car">Book-Car</a>
+    </div>
+</div>
+
+<div class="navbar" *ngIf="screenWidth > 900">
+    <div class="logo">
+        <h2>Car Rental</h2>
+    </div>
+    <div class="links" >
+        <a routerLink="/">Home</a>
+        <a routerLink="/car-listings">Car-Listings</a>
+        <a routerLink="/book-car">Book-Car</a>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+$background-color: #2F79F6;
+$background-color-input: white;
+$background-color-button: #8BFFD2;
+$background-color-button-hover: #65d6ab;
+$text-color: white;
+
+form {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    padding: 10px;
+}
+
+#location, #date, #time {
+    all: unset;
+    border-radius: 18px;
+    background-color: $background-color-input;
+    padding: 20px;
+    margin: 0.5em;
+}
+
+#location {
+    width: calc(20em - 100px);
+}
+
+button {
+    all: unset;
+    background-color: $background-color-button;
+    border-radius: 18px;
+    padding: 20px;
+    width: calc(20em - 100px);
+    margin: 0.5em;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: $background-color-button-hover;
+}
+
+.date-and-time {
+    display: flex;
+}
+
+input#age-checkbox {
+    all: padding;
+}
+
+label {
+    color: $text-color;
+}
+
+.age_checkbox {
+    margin: 0.5em;
+    width: calc(20em - 60px);
+}
