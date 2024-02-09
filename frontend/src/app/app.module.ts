@@ -8,6 +8,7 @@ import { CarListingsComponent } from './pages/car-listings/car-listings.componen
 import { BookCarComponent } from './pages/book-car/book-car.component';
 import { NavbarComponent } from './partials/navbar/navbar.component';
 import { SearchCarComponent } from './partials/search-car/search-car.component';
+import { CarBookCardComponent } from './partials/car-book-card/car-book-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchCarComponent } from './partials/search-car/search-car.component';
     CarListingsComponent,
     BookCarComponent,
     NavbarComponent,
-    SearchCarComponent
+    SearchCarComponent,
+    CarBookCardComponent
   ],
   imports: [
     BrowserModule,
