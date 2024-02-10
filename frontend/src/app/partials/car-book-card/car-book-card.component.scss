@@ -1,5 +1,6 @@
 $background-color: #2F79F6;
 $background-color-label: #8BFFD2;
+$background-color-promo-code: #DBE5F1;
 
 .car-book-card {
     margin-top: 50px;
@@ -127,5 +128,72 @@ $background-color-label: #8BFFD2;
               }
               
         }
+    }
+}
+
+.book-button {
+    background-color: white;
+    height: 200px;
+    width: 365px;
+    border-radius: 15px;
+    margin-top: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .book-button-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 100%;
+
+        .input-wrapper {
+            // all: unset;
+            background-color: $background-color-promo-code;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            width: 150px;
+            height: 30px;
+            position: relative;
+            
+            input {
+                all: unset;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .input-wrapper:before, .input-wrapper:after {
+            content: ""; /* Adding content */
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            width: 30px;
+            height: 20px;
+            z-index: 2;
+            top: 15px;
+        }
+        
+        .input-wrapper:before {
+            left: -20px; /* Adjusted position */
+        }
+        
+        .input-wrapper:after {
+            right: -20px; /* Adjusted position */
+        }
+    }
+
+    button {
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        background-color: $background-color;
+        width: 80%;
+        color: white;
     }
 }
